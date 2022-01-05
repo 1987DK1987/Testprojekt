@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+}
+
+.button {
+    cursor: pointer;
+    width: 300px;
+    height: 43px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.8);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 32px;
+}
+
+.pMbutton {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 20px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer !important;
+    color: blue !important;
+    font-size: 30px !important;
+}
+
+.outputEqual {
+    width: 40px !important;
+    height: 38px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+}
+
+#plusButton {
+    background-color: white !important;
+}
+
+.controllsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.pMbuttonContainer {
+    display: flex !important;
+}
+
+.contentAddAndRemoveSort {
+    display: flex;
+}
+
+.contentAddAndRemove {
+    display: flex;
+    align-items: center;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 8px;
+}
+
+.contentAddAndRemove a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.contentAddAndRemove a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contentAddAndRemove span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-right: rgba(0, 0, 0, 0.5) solid 1px;
+    border-left: rgba(0, 0, 0, 0.5) solid 1px;
+    height: 40px;
+    width: 40px;
+    font-size: 32px;
+}
+
+.headlineBG {
+    background-color: orangered;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.headlineLogo {
+    margin-left: 50px;
+}
+
+.headlineLogo img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.pizzaFabrikImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pizzaFabrikImg img {
+    background-color: white;
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain !important;
+    object-position: 50% 50% !important;
+    border: grey solid 1px;
+    position: absolute;
+    top: 250px;
+    left: center;
+    border-radius: 100%;
+}
+
+.headlineInput input {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    width: 300px;
+    border-bottom: solid 4px white !important;
+    background-color: orangered;
+}
+
+.headlineInput input:focus {
+    outline: none;
+}
+
+.headlineLanguage {
+    margin-right: 50px;
+}
+
+.headlineLanguage img {
+    height: 32px;
+    width: 32px;
+    border: white solid 2px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.centerSort {
+    margin-top: 100px;
+    display: flex;
+}
+
+.menuCardBG {
+    min-height: calc(100vh - 100px);
+    width: 70%;
+}
+
+.menuCardBG img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 2%;
+}
+
+.footerBG {
+    background-color: grey;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerContactLinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerContactLinks a {
+    font-weight: bold;
+    margin: 8px 0 8px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.footerContactLinks a:hover {
+    color: orangered;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMedia img {
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    margin: 0 8px 0 8px;
+    background-color: white;
+}
+
+.socialMedia img:hover {
+    background-color: orangered;
+}
+
+.contactFields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactFields img {
+    border-radius: 100%;
+    padding: 4px;
+    border: 1px solid white;
+    margin: 0 4px 0 4px;
+}
+
+.contactFields img:hover {
+    background-color: orangered;
+}
+
+.menuCardContent {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemContainerBGVisible {
+    cursor: pointer;
+    width: 80%;
+    height: 426px;
+    margin: 8px 0 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.itemBasket {
+    width: 30%;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - 100px);
+}
+
+.itemBasket h2 {
+    text-align: center;
+    border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+.itemContainerBGInvisible {
+    margin: 16px 0 0 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: solid grey 1px;
+    border-radius: 8px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.itemContainerBGVisible {
+    margin: 16px 0 0 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: solid grey 1px;
+    border-radius: 8px;
+}
+
+.itemContainerBGInvisible:hover {
+    border: 1px blue solid;
+}
+
+.itemHeadlineAndFunction {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 16px;
+    align-items: flex-start;
+}
+
+.itemHeadlineAndFunction h2,
+p,
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.itemHeadlineAndFunction h2 {
+    margin-top: 16px;
+}
+
+.itemHeadlineAndFunction a {
+    cursor: pointer;
+}
+
+.itemHeadlineAndFunction p {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 4px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 16px 0 16px;
+}
+
+.itemPrice p {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.itemPrice img {
+    width: 100px;
+    height: 100px;
+}
+
+.itemContainerAddsBG {
+    margin: 8px 0 8px 16px;
+}
